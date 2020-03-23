@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Explore Kathmandu with Near Kathmandu Website and Mobile Application available in both Android Playstore and Apple App Store...">
+    <meta name="author" content="">
+
+    <title>Find Places in Kathmandu with Near Kathmandu</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/blog-home.css" rel="stylesheet">
+
+    {{!-- Custom styles for the post single --}}
+    <link rel="stylesheet" href="/css/blog-post.css">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-7118023291295659",
+        enable_page_level_ads: true
+      });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143660357-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-143660357-1');
+    </script>
+
+    <script type="text/javascript">function add_chatinline(){var hccid=79304665;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+add_chatinline(); </script>
+
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=365248000800757&autoLogAppEvents=1"></script>
+
+  </head>
+
+  <body>
+
+    {{> home/home-nav}}
+
+    <!-- Page Content -->
+    <div class="container">
+
+      {{#if errors}}
+        {{#each errors}}
+        <div class="alert alert-danger">
+           {{message}}
+        </div>
+         
+
+        {{/each}}
+
+      {{/if}}
+
+      {{> home/form-msgs}}
+
+
+
+      {{{body}}}
+    </div>
+    <!-- /.container -->
+
+    {{> home/footer}}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+  </body>
+
+</html>
